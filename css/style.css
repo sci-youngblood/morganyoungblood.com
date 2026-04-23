@@ -412,7 +412,7 @@ body.field-mode .credential-item .cred-label { color: #66D9E8; }
 }
 
 #research .section-header h2 {
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
   font-weight: 300;
 }
 
@@ -525,13 +525,6 @@ body.field-mode .gee-app-card { background: #2D2E27; border-color: #3E3D32; }
   content: '';
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(42,191,191,0.03) 2px,
-    rgba(42,191,191,0.03) 4px
-  );
 }
 
 body.field-mode .gee-app-preview { background: #1E1F1A; }
@@ -998,6 +991,28 @@ body.field-mode .footer-copy { color: #75715E; }
 .field-trigger:hover { color: rgba(255,255,255,0.3); }
 body.field-mode .field-trigger { color: #3E3D32; }
 body.field-mode .field-trigger:hover { color: #66D9E8; }
+
+/* Hero field mode trigger */
+.hero-field-trigger {
+  position: absolute;
+  top: 80px;
+  right: 2rem;
+  z-index: 2;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  user-select: none;
+  transition: color var(--transition);
+  border: none;
+  background: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.hero-field-trigger:hover { color: rgba(255,255,255,0.55); }
+body.field-mode .hero-field-trigger { color: #3E3D32; }
+body.field-mode .hero-field-trigger:hover { color: #66D9E8; }
 
 /* ── Hamburger (mobile) ── */
 .nav-toggle {

@@ -43,10 +43,12 @@
     }
   });
 
-  // Click trigger (hidden bracket in footer)
+  // Click triggers (footer + hero)
   document.addEventListener('DOMContentLoaded', function () {
     const trigger = document.getElementById('field-trigger');
     if (trigger) trigger.addEventListener('click', toggleFieldMode);
+    const heroTrigger = document.getElementById('hero-field-trigger');
+    if (heroTrigger) heroTrigger.addEventListener('click', toggleFieldMode);
   });
 
   /* ── Coords type-in animation (field mode only) ── */

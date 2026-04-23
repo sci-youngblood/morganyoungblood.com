@@ -44,6 +44,7 @@
 ══════════════════════════════════════════ -->
 <section id="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <button class="hero-field-trigger" id="hero-field-trigger" aria-label="Toggle field mode">[ ]</button>
   <div class="hero-content">
     <p class="hero-coords">19.9083° N &nbsp;&nbsp; 155.0916° W</p>
     <h1 class="hero-name">Morgan<br>Youngblood</h1>
@@ -222,9 +223,7 @@
       <div class="gee-apps-grid">
 
         <div class="gee-app-card">
-          <div class="gee-app-preview">
-            ◎ &nbsp; PIRAT ARCHIPELAGO RECEIVER NETWORK
-          </div>
+          <div class="gee-app-preview" style="background-image:url('images/pirat-preview.png'); background-size:cover; background-position:center;"></div>
           <div class="gee-app-info">
             <h4>PIRAT Receiver Network — Hawaiian Archipelago</h4>
             <p>
@@ -238,15 +237,13 @@
         </div>
 
         <div class="gee-app-card">
-          <div class="gee-app-preview">
-            ◎ &nbsp; SCB HABITAT SUITABILITY MODEL
-          </div>
+          <div class="gee-app-preview" style="background-image:url('images/scb-preview.png'); background-size:cover; background-position:center;"></div>
           <div class="gee-app-info">
-            <h4>Scalloped Hammerhead Habitat Suitability</h4>
+            <h4>Marine Habitat Suitability — Santa Cruz Island</h4>
             <p>
-              Remote sensing-driven habitat suitability model for <em>Sphyrna lewini</em>
-              in Hawaiian waters. Integrates multi-layer environmental rasters with an
-              interactive GEE interface for dynamic threshold exploration.
+              Multi-variable habitat suitability index for the Southern California Bight,
+              built in Google Earth Engine. Combines SST, chlorophyll-a, and bathymetry
+              into a composite 0–1 suitability score with an interactive deployable UI panel.
             </p>
             <a href="https://atlantean-house-406306.projects.earthengine.app/view/scb-habitat-suitability"
                target="_blank" rel="noopener">→ Launch App</a>
@@ -266,7 +263,7 @@
         <div class="repo-card">
           <p class="repo-card-icon">sci-youngblood /</p>
           <h4><a href="https://github.com/sci-youngblood/SCB_HabitatSuitability" target="_blank" rel="noopener">SCB_HabitatSuitability</a></h4>
-          <p>GEE habitat suitability model for scalloped hammerhead sharks. Remote sensing raster integration with interactive ui.Panel deployment.</p>
+          <p>Combined SST, chlorophyll-a, and bathymetry map showing the interaction between productivity and upwelling around Point Conception.</p>
           <span class="repo-lang">JavaScript · GEE</span>
         </div>
 
